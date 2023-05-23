@@ -339,7 +339,6 @@ public class BookBorrowMan extends main {
                 if (updateRs.next()) {
                     Date localNow = Date.valueOf(LocalDate.now());
                     Date bookDue = updateRs.getDate("DUEDATE");
-                    long diff_of_dates = dateDiff(bookDue, localNow);
                     availability = updateRs.getString("AVAILABILITY");
 
                     if (availability.equals("BORROWING")) {
@@ -347,12 +346,12 @@ public class BookBorrowMan extends main {
                         updateRs.updateString("AVAILABILITY", availability);
                         updateRs.updateDate("BORROWEDDATE", localNow);
                         updateRs.updateRow();
-                    } else if (availability.equals("RETURNING") && (diff_of_dates >= 0)) {
+                    } else if (availability.equals("RETURNING") && !isOverDue(bookDue, localNow)) {
                         BookTitle=updateRs.getString("TITLE");
                         ChangeNumberOfCopies(BookTitle);
                         deleteAction();
                     } else {
-                        JOptionPane.showMessageDialog(null, "Book Overdue. Please handle the case for overdue books.");
+                        JOptionPane.showMessageDialog(null, "Book Overdue. The book has not been returned for "+dateDiff(localNow, bookDue)+" days. Penalty is "+ penaltyCost(bookDue, localNow, 0.15, 50)+ "pesos.");                        
                     }
                 }
 
@@ -483,11 +482,6 @@ public class BookBorrowMan extends main {
         refreshRsStmt("books");
     }
     
-    public long dateDiff(Date duedate, Date currentdate){
-        long millDiff = duedate.getTime() - currentdate.getTime();
-        long daysDiff = millDiff/(1000 * 60 * 60 * 24);
-        return daysDiff;
-    }
     
     private void ChangeNumberOfCopies(String BookName)throws SQLException{
         databaseConnect("books");

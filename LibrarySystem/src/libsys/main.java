@@ -6,6 +6,7 @@ import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.util.Random;
 import java.awt.Window;
+import java.text.DecimalFormat;
 import javax.swing.JFrame;
 import javax.swing.JTextField;
 import javax.swing.JPasswordField;
@@ -338,12 +339,25 @@ public class main extends javax.swing.JFrame {
         return textfield.getText().length() < limit;
     }
     
-    public long dateDiff(Date duedate, Date currentdate){
+    public static long dateDiff(Date duedate, Date currentdate){
         long millDiff = duedate.getTime() - currentdate.getTime();
         long daysDiff = millDiff/(1000 * 60 * 60 * 24);
         return daysDiff;
     }
-    
+    //To get a positive result, Date 1 must be older than Date 2. Rate should be something like 15% = 0.15.
+    public static double penaltyCost(Date date1, Date date2, double rate, int baseCost){
+        double penaltyCost;
+        long days = dateDiff(date2, date1);
+        try{
+            penaltyCost = baseCost*Math.pow(1+rate, days-1);
+            DecimalFormat df = new DecimalFormat("#######.##");
+            penaltyCost = Double.parseDouble(df.format(penaltyCost));
+            return penaltyCost;
+        } catch(NumberFormatException e){
+            System.out.println("An error occurred: " + e.getMessage());
+            return 0.0f;
+        }
+    }    
     public boolean emailTaken(String usiEmail)
     {
         try {
