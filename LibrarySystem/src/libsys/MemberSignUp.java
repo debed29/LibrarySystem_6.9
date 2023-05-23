@@ -54,6 +54,7 @@ public class MemberSignUp extends main{
         cbSex = new combobox.Combobox();
         jLabel1 = new javax.swing.JLabel();
         btnCreate = new Button_Gradient.ButtonGradient();
+        jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
         datechooser.setForeground(new java.awt.Color(0, 51, 204));
@@ -79,7 +80,7 @@ public class MemberSignUp extends main{
 
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/about.gif"))); // NOI18N
-        panelRound1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 370, 280));
+        panelRound1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 380, 280));
 
         tfEmail.setLabelText(" Email:");
         panelRound1.add(tfEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 350, 260, -1));
@@ -98,14 +99,19 @@ public class MemberSignUp extends main{
         panelRound1.add(tfLast, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 290, 260, -1));
 
         tfContact.setLabelText(" Contact Number:");
-        panelRound1.add(tfContact, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 290, 260, -1));
+        tfContact.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                tfContactKeyPressed(evt);
+            }
+        });
+        panelRound1.add(tfContact, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 350, 260, -1));
 
         tfBirth.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         tfBirth.setLabelText(" Birthdate: (DD/MM/YYYY)");
         panelRound1.add(tfBirth, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 230, 260, -1));
 
         tfAddress.setLabelText(" Home Address:");
-        panelRound1.add(tfAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 350, 260, -1));
+        panelRound1.add(tfAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 290, 260, -1));
 
         cbSex.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "MALE", "FEMALE" }));
         cbSex.setSelectedIndex(-1);
@@ -128,7 +134,10 @@ public class MemberSignUp extends main{
         });
         panelRound1.add(btnCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 500, 250, -1));
 
-        getContentPane().add(panelRound1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 70, 960, 580));
+        jLabel3.setForeground(new java.awt.Color(226, 24, 18));
+        panelRound1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 400, 260, 20));
+
+        getContentPane().add(panelRound1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 70, 960, 580));
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\PC\\Downloads\\paper-cut-luxury-gold-background-with-metal-texture-3d-abstract-for-gift-card-poster-on-wall-poster-template-landing-page-ui-ux-cover-book-banner-free-vector.jpg")); // NOI18N
@@ -210,6 +219,17 @@ public class MemberSignUp extends main{
         }
     }//GEN-LAST:event_btnCreateActionPerformed
 
+    private void tfContactKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tfContactKeyPressed
+        char c = evt.getKeyChar();
+        if(Character.isLetter(c)){
+            tfContact.setEditable(false);
+            jLabel3.setText("Contact number must contain only numbers");
+        }else
+        {
+              tfContact.setEditable(true);
+        }
+    }//GEN-LAST:event_tfContactKeyPressed
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -250,6 +270,7 @@ public class MemberSignUp extends main{
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private Panel_Gradient.PanelRound panelRound1;
     private textfield.PasswordField pfPass;
     private textfield.TextField tfAddress;
