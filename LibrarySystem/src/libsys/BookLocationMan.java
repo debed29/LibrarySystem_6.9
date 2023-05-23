@@ -189,7 +189,8 @@ public class BookLocationMan extends main {
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/2144483.png"))); // NOI18N
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1460, 990));
 
-        pack();
+        setSize(new java.awt.Dimension(1474, 1030));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened

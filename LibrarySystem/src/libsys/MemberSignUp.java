@@ -134,7 +134,8 @@ public class MemberSignUp extends main{
         jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\PC\\Downloads\\paper-cut-luxury-gold-background-with-metal-texture-3d-abstract-for-gift-card-poster-on-wall-poster-template-landing-page-ui-ux-cover-book-banner-free-vector.jpg")); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1140, 720));
 
-        setBounds(0, 0, 1154, 751);
+        setSize(new java.awt.Dimension(1154, 751));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
