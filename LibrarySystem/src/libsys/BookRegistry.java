@@ -40,8 +40,8 @@ public class BookRegistry extends main {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         Title_tf = new javax.swing.JTextField();
-        btn_Back = new Button_Gradient.ButtonGradient();
         Btn_Register = new Button_Gradient.ButtonGradient();
+        btn_Back = new Button_Gradient.ButtonGradient();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
 
@@ -137,26 +137,25 @@ public class BookRegistry extends main {
         });
         panelRound1.add(Title_tf, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 170, 250, 30));
 
-        btn_Back.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/back_to_25px_1.png"))); // NOI18N
-        btn_Back.setText("Back");
-        btn_Back.setColor1(new java.awt.Color(51, 51, 255));
-        btn_Back.setColor2(new java.awt.Color(0, 255, 255));
-        btn_Back.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_BackActionPerformed(evt);
-            }
-        });
-        panelRound1.add(btn_Back, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 100, 30));
-
         Btn_Register.setText("REGISTER");
-        Btn_Register.setColor1(new java.awt.Color(51, 51, 255));
-        Btn_Register.setColor2(new java.awt.Color(0, 255, 255));
+        Btn_Register.setColor1(new java.awt.Color(0, 51, 51));
+        Btn_Register.setColor2(new java.awt.Color(0, 102, 102));
         Btn_Register.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Btn_RegisterActionPerformed(evt);
             }
         });
         panelRound1.add(Btn_Register, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 350, 110, 40));
+
+        btn_Back.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/back_20px.png"))); // NOI18N
+        btn_Back.setColor1(new java.awt.Color(211, 204, 227));
+        btn_Back.setColor2(new java.awt.Color(233, 228, 240));
+        btn_Back.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_BackActionPerformed(evt);
+            }
+        });
+        panelRound1.add(btn_Back, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, 30));
 
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/23_0330_webpages_safecom-resources_cta-700x394_fogs.png"))); // NOI18N
@@ -203,10 +202,6 @@ public class BookRegistry extends main {
         new DropTarget(ImageLabel, imageInsert);
     }//GEN-LAST:event_Title_tfKeyPressed
 
-    private void btn_BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_BackActionPerformed
-        this.dispose();
-    }//GEN-LAST:event_btn_BackActionPerformed
-
     private void Btn_RegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_RegisterActionPerformed
         String[] InvalidChars={"\\?","\\:","\\<","\\>","\\/","\\*","\"","\\|"};
         String destinationpath="";
@@ -249,6 +244,10 @@ public class BookRegistry extends main {
             System.out.println(err);
         }
     }//GEN-LAST:event_Btn_RegisterActionPerformed
+
+    private void btn_BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_BackActionPerformed
+        this.dispose();
+    }//GEN-LAST:event_btn_BackActionPerformed
   
     private void CopyImage(String destinationpath) throws IOException{
         Path source=Paths.get(imageInsert.ImagePath);

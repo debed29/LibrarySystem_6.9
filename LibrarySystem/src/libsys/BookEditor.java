@@ -41,7 +41,8 @@ public class BookEditor extends main {
         jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         Btn_save = new Button_Gradient.ButtonGradient();
-        Btn_Back = new Button_Gradient.ButtonGradient();
+        Btn_Back1 = new Button_Gradient.ButtonGradient();
+        jLabel10 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -50,20 +51,20 @@ public class BookEditor extends main {
                 formWindowOpened(evt);
             }
         });
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Btn_Delete.setForeground(new java.awt.Color(0, 0, 0));
-        Btn_Delete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/remove_30px.png"))); // NOI18N
-        Btn_Delete.setText("Delete");
-        Btn_Delete.setColor1(new java.awt.Color(120, 255, 214));
-        Btn_Delete.setColor2(new java.awt.Color(168, 255, 120));
+        Btn_Delete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icons8-delete-20.png"))); // NOI18N
+        Btn_Delete.setText("DELETE");
+        Btn_Delete.setColor1(new java.awt.Color(32, 58, 67));
+        Btn_Delete.setColor2(new java.awt.Color(102, 102, 102));
         Btn_Delete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Btn_DeleteActionPerformed(evt);
             }
         });
-        jPanel1.add(Btn_Delete, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 380, 130, 37));
+        jPanel1.add(Btn_Delete, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 350, 130, 40));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
@@ -91,7 +92,7 @@ public class BookEditor extends main {
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("Synopsis/Description:");
         jLabel7.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, 150, 37));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 440, 150, 37));
         jPanel1.add(Title_tf, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 160, 350, 30));
         jPanel1.add(Author_tf, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 200, 350, 30));
         jPanel1.add(Year_tf, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 240, 350, 30));
@@ -114,7 +115,7 @@ public class BookEditor extends main {
         Synopsis_ta.setRows(5);
         jScrollPane1.setViewportView(Synopsis_ta);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 430, 730, 170));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 490, 650, 170));
 
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -136,44 +137,39 @@ public class BookEditor extends main {
         jLabel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 10, 320, 50));
 
+        Btn_save.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icons8-save-20.png"))); // NOI18N
         Btn_save.setText("SAVE");
-        Btn_save.setColor1(new java.awt.Color(0, 51, 255));
-        Btn_save.setColor2(new java.awt.Color(0, 255, 255));
+        Btn_save.setColor1(new java.awt.Color(32, 58, 67));
+        Btn_save.setColor2(new java.awt.Color(102, 102, 102));
         Btn_save.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Btn_saveActionPerformed(evt);
             }
         });
-        jPanel1.add(Btn_save, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 90, 110, 40));
+        jPanel1.add(Btn_save, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 350, 110, 40));
 
-        Btn_Back.setForeground(new java.awt.Color(0, 0, 0));
-        Btn_Back.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/back_to_25px_1.png"))); // NOI18N
-        Btn_Back.setText("Back");
-        Btn_Back.setColor1(new java.awt.Color(0, 255, 255));
-        Btn_Back.setColor2(new java.awt.Color(255, 255, 255));
-        Btn_Back.addActionListener(new java.awt.event.ActionListener() {
+        Btn_Back1.setForeground(new java.awt.Color(0, 0, 0));
+        Btn_Back1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/back_20px.png"))); // NOI18N
+        Btn_Back1.setColor1(new java.awt.Color(211, 204, 227));
+        Btn_Back1.setColor2(new java.awt.Color(233, 228, 240));
+        Btn_Back1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Btn_BackActionPerformed(evt);
+                Btn_Back1ActionPerformed(evt);
             }
         });
-        jPanel1.add(Btn_Back, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 100, 30));
+        jPanel1.add(Btn_Back1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 60, 30));
+
+        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/particlesjs-examples.gif"))); // NOI18N
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 410, 740, 270));
 
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/parralax-about.jpg"))); // NOI18N
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(-6, 0, 860, 630));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(-16, -697, 760, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 628, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 2, 740, -1));
 
-        pack();
+        setSize(new java.awt.Dimension(755, 721));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -235,12 +231,6 @@ public class BookEditor extends main {
         this.dispose();
     }//GEN-LAST:event_Btn_saveActionPerformed
 
-    private void Btn_BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_BackActionPerformed
-        this.dispose();
-        sendDisplaySignal(new BookEditor());
-        BookViewer.hideBorrow().setVisible(false);
-    }//GEN-LAST:event_Btn_BackActionPerformed
-
     private void Btn_DeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_DeleteActionPerformed
         int response;
         response=JOptionPane.showConfirmDialog(null, "This will completely wipe the book from the System, Are you sure?", "Confirmation?", 0);
@@ -288,6 +278,12 @@ public class BookEditor extends main {
             System.out.println(err.getMessage());
         }
     }//GEN-LAST:event_formWindowOpened
+
+    private void Btn_Back1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_Back1ActionPerformed
+        this.dispose();
+        sendDisplaySignal(new BookEditor());
+        BookViewer.hideBorrow().setVisible(false);
+    }//GEN-LAST:event_Btn_Back1ActionPerformed
   
     private void DeleteAction(){
         try {
@@ -347,7 +343,7 @@ public class BookEditor extends main {
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField Author_tf;
-    private Button_Gradient.ButtonGradient Btn_Back;
+    private Button_Gradient.ButtonGradient Btn_Back1;
     private Button_Gradient.ButtonGradient Btn_Delete;
     private Button_Gradient.ButtonGradient Btn_save;
     private javax.swing.JTextField Genre_tf;
@@ -356,6 +352,7 @@ public class BookEditor extends main {
     private javax.swing.JTextField Title_tf;
     private javax.swing.JTextField Year_tf;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

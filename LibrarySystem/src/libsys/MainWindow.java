@@ -47,13 +47,13 @@ public class MainWindow extends javax.swing.JFrame {
 
         btnReader1.setBackground(new java.awt.Color(255, 255, 255));
         btnReader1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/reading_32px.png"))); // NOI18N
-        btnReader1.setText("Reader");
+        btnReader1.setText("READER");
         btnReader1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnReader1ActionPerformed(evt);
             }
         });
-        panelRound1.add(btnReader1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 260, 170, 70));
+        panelRound1.add(btnReader1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 270, 170, 70));
 
         btnAdmin1.setBackground(new java.awt.Color(255, 255, 255));
         btnAdmin1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/admin_settings_male_32px.png"))); // NOI18N

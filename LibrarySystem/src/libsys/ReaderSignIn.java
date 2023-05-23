@@ -18,29 +18,22 @@ public class ReaderSignIn extends main {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        kGradientPanel1 = new keeptoo.KGradientPanel();
-        jLabel8 = new javax.swing.JLabel();
         btnBack = new Button_Gradient.ButtonGradient();
-        panelRound1 = new Panel_Gradient.PanelRound();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        txtLogEmail = new textfield.TextField();
+        panelTransparent1 = new test_transparent_panel.PanelTransparent();
         txtLogPass = new textfield.PasswordField();
+        txtLogEmail = new textfield.TextField();
         btnCreate = new Button_Gradient.ButtonGradient();
+        jLabel7 = new javax.swing.JLabel();
         btnCreateAcc = new Button_Gradient.ButtonGradient();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        kGradientPanel1.setkEndColor(new java.awt.Color(255, 51, 51));
-        kGradientPanel1.setkStartColor(new java.awt.Color(153, 0, 51));
-        kGradientPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/image_processing20200810-29265-bud3le.gif"))); // NOI18N
-        kGradientPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, 750, 630));
 
         btnBack.setBackground(new java.awt.Color(0, 0, 0));
         btnBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/back_20px.png"))); // NOI18N
@@ -51,109 +44,83 @@ public class ReaderSignIn extends main {
                 btnBackActionPerformed(evt);
             }
         });
-        kGradientPanel1.add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 60, 30));
+        getContentPane().add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 60, 30));
 
-        panelRound1.setBackground(new java.awt.Color(255, 255, 255));
-        panelRound1.setRoundBottomLeft(25);
-        panelRound1.setRoundBottomRight(25);
-        panelRound1.setRoundTopLeft(25);
-        panelRound1.setRoundTopRight(25);
+        panelTransparent1.setBackground(new java.awt.Color(0, 153, 204));
+        panelTransparent1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 22)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 153, 153));
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("Welcome Back Guest/Member");
-        jLabel4.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        txtLogPass.setLabelText(" Enter Password:");
+        txtLogPass.setShowAndHide(true);
+        panelTransparent1.add(txtLogPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 330, 245, -1));
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("Log In to continue");
-        jLabel5.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-
-        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel7.setText("Don't have account?");
-
-        txtLogEmail.setLabelText("Enter your Email");
+        txtLogEmail.setLabelText(" Enter your Email:");
         txtLogEmail.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtLogEmailActionPerformed(evt);
             }
         });
-
-        txtLogPass.setLabelText("Enter Password");
-        txtLogPass.setShowAndHide(true);
+        panelTransparent1.add(txtLogEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 260, 243, -1));
 
         btnCreate.setBackground(new java.awt.Color(0, 0, 0));
         btnCreate.setText("LOGIN");
-        btnCreate.setColor1(new java.awt.Color(255, 51, 51));
-        btnCreate.setColor2(new java.awt.Color(153, 0, 51));
+        btnCreate.setColor1(new java.awt.Color(0, 51, 51));
+        btnCreate.setColor2(new java.awt.Color(0, 102, 102));
         btnCreate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCreateActionPerformed(evt);
             }
         });
+        panelTransparent1.add(btnCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 410, 246, 40));
+
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel7.setText("Don't have account?");
+        panelTransparent1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 510, -1, 22));
 
         btnCreateAcc.setBackground(new java.awt.Color(255, 255, 255));
         btnCreateAcc.setText("CREATE ACCOUNT");
-        btnCreateAcc.setColor1(new java.awt.Color(255, 51, 51));
-        btnCreateAcc.setColor2(new java.awt.Color(153, 0, 51));
+        btnCreateAcc.setColor1(new java.awt.Color(0, 51, 51));
+        btnCreateAcc.setColor2(new java.awt.Color(0, 102, 102));
         btnCreateAcc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCreateAccActionPerformed(evt);
             }
         });
+        panelTransparent1.add(btnCreateAcc, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 505, -1, 30));
 
-        javax.swing.GroupLayout panelRound1Layout = new javax.swing.GroupLayout(panelRound1);
-        panelRound1.setLayout(panelRound1Layout);
-        panelRound1Layout.setHorizontalGroup(
-            panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelRound1Layout.createSequentialGroup()
-                .addGap(0, 45, Short.MAX_VALUE)
-                .addComponent(jLabel7)
-                .addGap(17, 17, 17)
-                .addComponent(btnCreateAcc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(74, 74, 74))
-            .addGroup(panelRound1Layout.createSequentialGroup()
-                .addGap(89, 89, 89)
-                .addGroup(panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtLogPass, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtLogEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnCreate, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        panelRound1Layout.setVerticalGroup(
-            panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelRound1Layout.createSequentialGroup()
-                .addContainerGap(77, Short.MAX_VALUE)
-                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(6, 6, 6)
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtLogEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(txtLogPass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38)
-                .addComponent(btnCreate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
-                .addGroup(panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnCreateAcc, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(62, 62, 62))
-        );
+        jLabel4.setFont(new java.awt.Font("Yu Gothic UI Semilight", 1, 24)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(204, 255, 255));
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("Welcome Back Guest/Member");
+        jLabel4.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        panelTransparent1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 390, 40));
 
-        kGradientPanel1.add(panelRound1, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 90, 440, -1));
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icons8-male-user-94.png"))); // NOI18N
+        panelTransparent1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 45, 390, 110));
 
-        getContentPane().add(kGradientPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 710));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icons8-email-40.png"))); // NOI18N
+        panelTransparent1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 60, 60));
 
-        setSize(new java.awt.Dimension(1296, 748));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icons8-password-40.png"))); // NOI18N
+        panelTransparent1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, 60, 70));
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(51, 255, 255));
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setText("Log In to continue");
+        jLabel5.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        panelTransparent1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 390, 54));
+
+        getContentPane().add(panelTransparent1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 180, 390, 570));
+
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/199139574.jpg"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1040, 850));
+
+        setSize(new java.awt.Dimension(1057, 890));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
      
@@ -185,13 +152,14 @@ public class ReaderSignIn extends main {
     private Button_Gradient.ButtonGradient btnBack;
     private Button_Gradient.ButtonGradient btnCreate;
     private Button_Gradient.ButtonGradient btnCreateAcc;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private keeptoo.KGradientPanel kGradientPanel1;
-    private Panel_Gradient.PanelRound panelRound1;
+    private test_transparent_panel.PanelTransparent panelTransparent1;
     private textfield.TextField txtLogEmail;
     private textfield.PasswordField txtLogPass;
     // End of variables declaration//GEN-END:variables

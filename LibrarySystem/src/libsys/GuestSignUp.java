@@ -15,167 +15,107 @@ public class GuestSignUp extends main {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        kGradientPanel2 = new keeptoo.KGradientPanel();
-        jLabel1 = new javax.swing.JLabel();
-        btnBack1 = new Button_Gradient.ButtonGradient();
-        panelRound1 = new Panel_Gradient.PanelRound();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        btnBack = new Button_Gradient.ButtonGradient();
+        panelTransparent1 = new test_transparent_panel.PanelTransparent();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
         txtNewEmail = new textfield.TextField();
-        jLabel7 = new javax.swing.JLabel();
-        txtNewPassConf = new textfield.PasswordField();
-        jLabel9 = new javax.swing.JLabel();
         txtNewPass = new textfield.PasswordField();
+        txtNewPassConf = new textfield.PasswordField();
         btnConfirm1 = new Button_Gradient.ButtonGradient();
-        jLabel10 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        kGradientPanel2.setkEndColor(new java.awt.Color(0, 51, 153));
-        kGradientPanel2.setkStartColor(new java.awt.Color(255, 204, 204));
-        kGradientPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/18sp-ourfuture-libraries-mediumSquareAt3X (1).gif"))); // NOI18N
-        kGradientPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 790, 650));
-
-        btnBack1.setBackground(new java.awt.Color(153, 153, 255));
-        btnBack1.setForeground(new java.awt.Color(51, 51, 255));
-        btnBack1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/back_20px.png"))); // NOI18N
-        btnBack1.setColor1(new java.awt.Color(211, 204, 227));
-        btnBack1.setColor2(new java.awt.Color(233, 228, 240));
-        btnBack1.addActionListener(new java.awt.event.ActionListener() {
+        btnBack.setBackground(new java.awt.Color(153, 153, 255));
+        btnBack.setForeground(new java.awt.Color(51, 51, 255));
+        btnBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/back_20px.png"))); // NOI18N
+        btnBack.setColor1(new java.awt.Color(211, 204, 227));
+        btnBack.setColor2(new java.awt.Color(233, 228, 240));
+        btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBack1ActionPerformed(evt);
+                btnBackActionPerformed(evt);
             }
         });
-        kGradientPanel2.add(btnBack1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 60, 30));
+        getContentPane().add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 60, 30));
 
-        panelRound1.setBackground(new java.awt.Color(255, 255, 255));
-        panelRound1.setRoundBottomLeft(25);
-        panelRound1.setRoundBottomRight(25);
-        panelRound1.setRoundTopLeft(25);
-        panelRound1.setRoundTopRight(25);
+        panelTransparent1.setBackground(new java.awt.Color(0, 153, 204));
+        panelTransparent1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 22)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 153, 153));
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("Create account");
-        jLabel5.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icons8-add-user-male-100.png"))); // NOI18N
+        panelTransparent1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 400, 120));
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("Register a new account");
-        jLabel6.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 28)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(204, 255, 255));
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel8.setText("Create account");
+        jLabel8.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        panelTransparent1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, 399, 50));
+
+        jLabel12.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(0, 255, 255));
+        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel12.setText("Register a account");
+        jLabel12.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        panelTransparent1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 399, 27));
 
         txtNewEmail.setLabelText("Enter your full name\n");
-
-        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-
-        txtNewPassConf.setLabelText("Confirm Password");
-        txtNewPassConf.setShowAndHide(true);
-
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/User Default_30px.png"))); // NOI18N
+        panelTransparent1.add(txtNewEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 290, 250, -1));
 
         txtNewPass.setLabelText("Create Password\n");
         txtNewPass.setShowAndHide(true);
+        txtNewPass.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNewPassActionPerformed(evt);
+            }
+        });
+        panelTransparent1.add(txtNewPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 360, 250, -1));
+
+        txtNewPassConf.setLabelText("Confirm Password");
+        txtNewPassConf.setShowAndHide(true);
+        panelTransparent1.add(txtNewPassConf, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 430, 250, -1));
 
         btnConfirm1.setBackground(new java.awt.Color(0, 0, 0));
         btnConfirm1.setText("CREATE ACCOUNT");
-        btnConfirm1.setColor1(new java.awt.Color(0, 51, 153));
-        btnConfirm1.setColor2(new java.awt.Color(255, 204, 204));
+        btnConfirm1.setColor1(new java.awt.Color(0, 51, 51));
+        btnConfirm1.setColor2(new java.awt.Color(0, 102, 102));
         btnConfirm1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnConfirm1ActionPerformed(evt);
             }
         });
+        panelTransparent1.add(btnConfirm1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 520, 250, 40));
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/password_key_37px.png"))); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icons8-user-50.png"))); // NOI18N
+        panelTransparent1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, 60, 40));
 
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/password_37px.png"))); // NOI18N
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icons8-password-40.png"))); // NOI18N
+        panelTransparent1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 360, 50, 44));
 
-        javax.swing.GroupLayout panelRound1Layout = new javax.swing.GroupLayout(panelRound1);
-        panelRound1.setLayout(panelRound1Layout);
-        panelRound1Layout.setHorizontalGroup(
-            panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelRound1Layout.createSequentialGroup()
-                .addGroup(panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelRound1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 389, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(panelRound1Layout.createSequentialGroup()
-                        .addGap(45, 45, 45)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 308, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(panelRound1Layout.createSequentialGroup()
-                .addGroup(panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelRound1Layout.createSequentialGroup()
-                        .addGap(781, 781, 781)
-                        .addComponent(jLabel7))
-                    .addGroup(panelRound1Layout.createSequentialGroup()
-                        .addGap(31, 31, 31)
-                        .addGroup(panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(panelRound1Layout.createSequentialGroup()
-                                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(32, 32, 32)
-                                .addComponent(txtNewPassConf, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(panelRound1Layout.createSequentialGroup()
-                                .addGroup(panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel9))
-                                .addGap(30, 30, 30)
-                                .addGroup(panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(txtNewEmail, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
-                                    .addComponent(txtNewPass, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)))
-                            .addGroup(panelRound1Layout.createSequentialGroup()
-                                .addGap(43, 43, 43)
-                                .addComponent(btnConfirm1, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        panelRound1Layout.setVerticalGroup(
-            panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelRound1Layout.createSequentialGroup()
-                .addGroup(panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelRound1Layout.createSequentialGroup()
-                        .addGap(66, 66, 66)
-                        .addComponent(jLabel7))
-                    .addGroup(panelRound1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(90, 90, 90)
-                .addGroup(panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(txtNewEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel9))
-                .addGap(37, 37, 37)
-                .addGroup(panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(txtNewPass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(37, 37, 37)
-                .addGroup(panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(txtNewPassConf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(55, 55, 55)
-                .addComponent(btnConfirm1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(64, 64, 64))
-        );
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icons8-forgot-password-40.png"))); // NOI18N
+        panelTransparent1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 430, 70, 44));
 
-        kGradientPanel2.add(panelRound1, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 84, 410, 620));
+        getContentPane().add(panelTransparent1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 130, 400, 620));
 
-        getContentPane().add(kGradientPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1330, 760));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/199139574.jpg"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1040, 850));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
     
    
-    private void btnBack1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBack1ActionPerformed
+    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
         this.dispose();
         main.sendDisplaySignal(new ReaderSignIn()); // <--- It goes to
-    }//GEN-LAST:event_btnBack1ActionPerformed
+    }//GEN-LAST:event_btnBackActionPerformed
 
     private void btnConfirm1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfirm1ActionPerformed
 
@@ -248,19 +188,22 @@ public class GuestSignUp extends main {
         }
     }//GEN-LAST:event_btnConfirm1ActionPerformed
 
+    private void txtNewPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNewPassActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNewPassActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private Button_Gradient.ButtonGradient btnBack1;
+    private Button_Gradient.ButtonGradient btnBack;
     private Button_Gradient.ButtonGradient btnConfirm1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private keeptoo.KGradientPanel kGradientPanel2;
-    private Panel_Gradient.PanelRound panelRound1;
+    private test_transparent_panel.PanelTransparent panelTransparent1;
     private textfield.TextField txtNewEmail;
     private textfield.PasswordField txtNewPass;
     private textfield.PasswordField txtNewPassConf;
